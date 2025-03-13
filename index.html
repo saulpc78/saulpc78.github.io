@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contratación - Excellence For Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background: #222;
+            color: #fff;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Excellence For Events</h1>
+        <h2>Formulario de Contratación de Eventos</h2>
+        
+        <form>
+            <label for="cliente">Nombre del Cliente/Empresa:</label>
+            <input type="text" id="cliente" name="cliente" required>
+            
+            <label for="fecha">Fecha del Evento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <label for="ubicacion">Ubicación del Evento:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+            
+            <label for="tipo-evento">Tipo de Evento:</label>
+            <select id="tipo-evento" name="tipo-evento" required>
+                <option value="conferencia">Conferencia</option>
+                <option value="feria">Feria</option>
+                <option value="lanzamiento">Lanzamiento de Producto</option>
+                <option value="networking">Networking</option>
+                <option value="corporativo">Otro Evento Corporativo</option>
+            </select>
+            <br><br>
+            <label>Servicios Requeridos:</label>
+            <input type="checkbox" name="servicios" value="logistica"> Logística y Planificación<br>
+            <input type="checkbox" name="servicios" value="audiovisual"> Producción Audiovisual<br>
+            <input type="checkbox" name="servicios" value="catering"> Catering y Banquetes<br>
+            <input type="checkbox" name="servicios" value="seguridad"> Seguridad del Evento<br>
+            <input type="checkbox" name="servicios" value="decoracion"> Decoración y Ambientación<br>
+            <input type="checkbox" name="servicios" value="marketing"> Marketing y Publicidad<br>
+            <input type="checkbox" name="servicios" value="impresion"> Impresión y Material Publicitario<br>
+            <input type="checkbox" name="servicios" value="otro"> Otro (especificar abajo)<br>
+            <br><br>
+            <label for="detalle-servicio">Detalles Adicionales:</label>
+            <textarea id="detalle-servicio" name="detalle-servicio" rows="4" placeholder="Especificaciones del evento..."></textarea>
+            <br><br>
+            <label>Material Impreso (si aplica):</label><br>
+            <input type="checkbox" name="impresion" value="posters"> Pósters<br>
+            <input type="checkbox" name="impresion" value="boletos"> Boletos<br>
+            <input type="checkbox" name="impresion" value="folletos"> Folletos<br>
+            <input type="checkbox" name="impresion" value="lonas"> Lonas y Banners<br>
+            <input type="checkbox" name="impresion" value="tarjetas"> Tarjetas de Presentación<br>
+            <input type="checkbox" name="impresion" value="programas"> Programas del Evento<br>
+            <input type="checkbox" name="impresion" value="otros"> Otros (especificar abajo)<br>
+            <textarea id="impresion-otros" name="impresion-otros" rows="2" placeholder="Especificar otros materiales..."></textarea>            
+            
+            <label for="comentarios">Comentarios Adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cualquier otro requerimiento especial..."></textarea>
+            
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+</body>
+</html>
